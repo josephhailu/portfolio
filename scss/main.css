@@ -323,8 +323,44 @@ main#home h1 {
 .projects img:hover {
   opacity: 0.5;
   border-color: #eece1a;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+}
+
+.boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.boxes div {
+  font-size: 2rem;
+  border: 3px solid white;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 3rem;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.boxes div:hover {
+  padding: 1.5rem 2.5rem;
+  background: #eece1a;
+  color: set-text-color(#eece1a);
+}
+
+.boxes div:hover span {
+  color: set-text-color(#eece1a);
 }
 
 .btn, .btn-dark, .btn-light {
@@ -422,8 +458,15 @@ main#home h1 {
 }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
+  main {
+    padding: 2rem;
+  }
+  main #home h1 {
     margin-top: 10vh;
+  }
+  main .lg-heading {
+    margin-top: 1rem;
+    font-size: 5rem;
   }
   .projects {
     -ms-grid-columns: 1fr;

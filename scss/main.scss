@@ -115,6 +115,7 @@ main {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
+
   img {
     width: 100%;
     border: 3px solid white;
@@ -122,7 +123,35 @@ main {
     &:hover {
       opacity: 0.5;
       border-color: $secondary-colour;
+      transform: scale(1.1, 1.1);
       @include easeOut;
+    }
+  }
+}
+
+//contact page
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+
+  div {
+    font-size: 2rem;
+    border: 3px solid white;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 3rem;
+    @include easeOut;
+
+    &:hover {
+      padding: 1.5rem 2.5rem;
+      background: $secondary-colour;
+      color: set-text-color($secondary-colour);
+
+      span {
+        color: set-text-color($secondary-colour);
+      }
     }
   }
 }
