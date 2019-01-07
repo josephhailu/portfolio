@@ -32,6 +32,14 @@ $background-opacity: 0.9;
     }
   }
 }
+//set colour
+@function set-text-colour($colour) {
+  @if (lightness($colour) >40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
 
 //Media query mixins for small medium large and extra large screen sizes
 
