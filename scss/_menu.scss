@@ -78,14 +78,7 @@
       transform: translate3d(0, 0, 0);
     }
 
-    .portrait {
-      width: 250px;
-      height: 250px;
-      background: url(../images/portrait.jpeg);
-      background-size: cover;
-      border-radius: 50%;
-      border: solid 3px $secondary-colour;
-    }
+    
   }
 
   .nav-item {
@@ -107,7 +100,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: set-text-colour($primary-colour);
+    color: set-text-colour($secondary-colour);
     text-decoration: none;
     @include easeOut;
   }

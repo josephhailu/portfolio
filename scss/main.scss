@@ -35,14 +35,14 @@ h3 {
 //link styling
 
 a {
-  color: #fff;
+  color:rgba(lighten($primary-colour, 2), 0.5);
   text-decoration: none;
 }
 
 //header styling (menu button)
 
 header {
-  position: fixed;
+  position: fixed; 
   z-index: 2;
   width: 100%;
 }
@@ -61,8 +61,10 @@ main {
 
   .icons {
     margin-top: 1rem;
+    
     a {
       padding: 0.4rem;
+     
       &:hover {
         color: $secondary-colour;
         @include easeOut();
@@ -136,21 +138,22 @@ main {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem;
-
+  
   div {
-    font-size: 2rem;
+    font-size: 2rem; 
     border: 3px solid white;
     padding: 0.5rem 1.5rem;
     margin-bottom: 3rem;
     @include easeOut;
-
+ 
     &:hover {
       padding: 1.5rem 2.5rem;
-      background: $secondary-colour;
-      color: set-text-color($secondary-colour);
-
+      background:$secondary-colour; 
+      color: #fff;
+      //color: set-text-color(red);
+    
       span {
-        color: set-text-color($secondary-colour);
+        color: black;
       }
     }
   }
@@ -185,8 +188,9 @@ main {
   text-align: center;
   padding: 1rem;
   background: darken($primary-colour, 10);
-  color: set-text-color($primary-colour);
+  color: $primary-colour;
   height: 60px;
+  min-height: 100%;
 }
 
 @import "mobile";
