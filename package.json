@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Responsive Portfolio",
   "main": "index.js",
-  "homepage": "https://github.com/josephhailu/portfolio/dist",
+  "homepage": "https://josephhailu.github.io/portfolio",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0"
