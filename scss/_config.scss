@@ -4,8 +4,8 @@ $secondary-colour: #728ee7;
 $show-home-image: true;
 
 //MAKE SURE THE URL REFLECTS THE PATH RELATIVE TO THE CSS FILE, NOT THE SASS (scss) FILE!!!!
-$home-image: url(../images/background.jpg);
-$background-opacity: 0.9;
+$home-image: url(../images/rocks_sm.jpg);
+$background-opacity: .9;
 
 //frequently used mixins
 @mixin easeOut {

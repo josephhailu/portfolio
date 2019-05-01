@@ -1,9 +1,9 @@
 //menu button
 .menu-btn {
   position: absolute;
-  z-index: 3;
-  right: 35px;
-  top: 35px;
+  z-index: 3; 
+  left: 25px;
+  top: 25px;
   cursor: pointer;
   @include easeOut;
   .btn-line {
@@ -13,7 +13,7 @@
     background: set-text-colour($primary-colour);
     @include easeOut;
   }
-  //rotate into x with lines
+  //rotate into x with lines 
   &.close {
     transform: rotate(180deg);
 
@@ -31,7 +31,7 @@
   }
 }
 
-//menu overlay
+//menu  button overlay
 .menu {
   position: fixed;
   top: 0;
@@ -52,6 +52,7 @@
     width: 50%;
     height: 100vh;
     overflow: hidden;
+    
   }
 
   &-nav {
@@ -99,15 +100,17 @@
     font-size: 30px;
     text-transform: uppercase;
     padding: 1rem 0;
-    font-weight: 300;
+    font-weight: 400;
     color: set-text-colour($secondary-colour);
     text-decoration: none;
     @include easeOut;
+
+    &:hover {
+      color: $secondary-colour;
+    }
   }
 
-  &:hover {
-    color: $secondary-colour;
-  }
+  
 }
 
 @for $var from 1 through 5 {
