@@ -8,8 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "author": "Joseph Hailu",
   "license": "MIT"
