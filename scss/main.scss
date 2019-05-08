@@ -59,7 +59,7 @@ header {
 main { 
   padding: 4rem; 
   height: calc(100vh - 60px);     
-  
+
   //changing the hover colour to the respective brands colour scheme 
   .icons { 
     margin-top: 1rem; 
@@ -121,12 +121,10 @@ main {
 
 //About me page/////// //////////////////////////////////////////////
 #bg-image-about{
-  @if $show-home-image {
-    &#bg-image-about {
-      background-image: url(../images/hockey_sm.jpg);    
+      background: url(../images/hockey_sm.jpg);
       background-attachment: fixed;
       background-size: cover;
-
+      position: relative;
       &:after {
         content: " ";
         position: absolute;
@@ -137,19 +135,13 @@ main {
         z-index: -1;
         background: rgba($primary-colour, $background-opacity);
       }
-    }
-  }
-  
+
 }
 .about-info {
   display: grid;
   grid-template-areas: "bio bio bios" "job1 job2 job3";  
   grid-template-columns: repeat(3, 1fr);  
   grid-gap: 30px;
-  
-  
-
-
   
   .bio {
     grid-area: bio;
@@ -174,14 +166,23 @@ main {
 
 // work////////////////////////////////////////////////////
 #bg-image-work{
-  background-image: url(../images/board_sm.jpg);    
-  background-attachment: fixed;
-  background-size: cover;
-  background: linear-gradient(
-    rgba($primary-colour, $background-opacity),
-    rgba($primary-colour, $background-opacity)
-  )
-  ;
+
+      background-image: url(../images/board_sm.jpg);
+      background-attachment: fixed;
+      background-size:cover;
+      position: relative;
+      
+      &:after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba($primary-colour, $background-opacity);
+      }
+    
   
 }
 
@@ -189,9 +190,8 @@ main {
   height: 100%;
   
 }
-
 .projects {
-  height: calc(100vh-60px);  
+  //height: calc(100%-60px);  
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: 1fr 1fr 1fr;
