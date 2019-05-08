@@ -14,5 +14,9 @@
     "deploy": "gh-pages -d dist"
   },
   "author": "Joseph Hailu",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/josephhailu/portfolio.git"
+  },
   "license": "MIT"
 }
