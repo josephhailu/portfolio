@@ -172,6 +172,7 @@ body#bg-image {
   background: url(../images/rocks_sm.jpg);
   background-attachment: fixed;
   background-size: cover;
+  position: relative;
 }
 
 body#bg-image:after {
@@ -292,13 +293,14 @@ main#home h1 {
   margin-top: 6vh;
 }
 
-#bg-image-about#bg-image-about {
-  background-image: url(../images/hockey_sm.jpg);
+#bg-image-about {
+  background: url(../images/hockey_sm.jpg);
   background-attachment: fixed;
   background-size: cover;
+  position: relative;
 }
 
-#bg-image-about#bg-image-about:after {
+#bg-image-about:after {
   content: " ";
   position: absolute;
   top: 0;
@@ -354,6 +356,7 @@ main#home h1 {
   background-image: url(../images/board_sm.jpg);
   background-attachment: fixed;
   background-size: cover;
+  position: relative;
 }
 
 #bg-image-work:after {
@@ -362,7 +365,7 @@ main#home h1 {
   top: 0;
   right: 0;
   width: 100%;
-  height: 120vh;
+  height: 100%;
   z-index: -1;
   background: rgba(245, 246, 250, 0.9);
 }
@@ -372,7 +375,6 @@ main#home h1 {
 }
 
 .projects {
-  height: calc(100vh-60px);
   display: -ms-grid;
   display: grid;
   grid-gap: 0.7rem;
@@ -506,7 +508,7 @@ main#home h1 {
             transform: translate3d(100%, 0, 0);
   }
   .about-info {
-        grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+        grid-template-areas: "bio" "job1" "job2" "job3";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
