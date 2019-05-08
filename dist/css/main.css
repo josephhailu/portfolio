@@ -354,17 +354,8 @@ main#home h1 {
   background-image: url(../images/board_sm.jpg);
   background-attachment: fixed;
   background-size: cover;
-}
-
-#bg-image-work:after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 120vh;
-  z-index: -1;
-  background: rgba(245, 246, 250, 0.9);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 246, 250, 0.9)), to(rgba(245, 246, 250, 0.9)));
+  background: linear-gradient(rgba(245, 246, 250, 0.9), rgba(245, 246, 250, 0.9));
 }
 
 #work {
