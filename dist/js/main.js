@@ -1,3 +1,5 @@
+import 'bootstrap';
+
 // select document object model items DOM
 const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector(".menu");
