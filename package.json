@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.2",
   "description": "Responsive Portfolio",
-  "main": "index.html",
+  "main": "index.js",
   "homepage": "https://josephhailu.github.io/portfolio",
   "dependencies": {
     "bootstrap": "^4.3.1",
