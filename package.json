@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Responsive Portfolio",
-  "main": "index.js",
+  "main": "index.html",
   "homepage": "https://josephhailu.github.io/portfolio",
   "dependencies": {
     "bootstrap": "^4.3.1",
@@ -19,14 +19,15 @@
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist",
-    "start": "npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Joseph Hailu",
   "repository": {
     "type": "git",
     "url": "git://github.com/josephhailu/portfolio.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josephhailu/portfolio/issues"
+  }
 }
